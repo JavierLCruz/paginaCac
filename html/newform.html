@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //arriba de todo va mi fucion
+        function buscar () {
+            //aca voy a tomar el input que esta en el html
+            const inputEnELHTML = document.getElementById('claveBusqueda');
+            
+            //quiero el value del input
+            alert(inputEnELHTML.value);
+        }
+
+        const boton = document.getElementById('btnBuscar');
+
+        boton.addEventListener('click', buscar);//dos parametros
+    </script>
+</head>
+<body>
+    <div>
+        <input id="claveBusqueda" value="Algo">
+        <button id="btnBuscar">
+            Buscar
+        </button>
+    </div>
+
+    <h3 id="textoBuscado"></h3>
+</body>
+</html>
